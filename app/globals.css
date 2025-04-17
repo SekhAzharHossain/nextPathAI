@@ -120,3 +120,45 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  background-color: #0d0d0d;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.glowing-lines {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 255, 255, 0.1),
+    rgba(0, 255, 255, 0.6),
+    rgba(0, 255, 255, 0.1)
+  );
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+  animation: pulse 3s ease-in-out infinite alternate;
+}
+
+/* Animate the lines a little */
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+    transform: scaleY(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1.03);
+  }
+}
+
