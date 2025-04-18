@@ -6,6 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import GlowingLines from "@/components/GlowingLines";
 const inter = Inter({subsets:["latin"]})
+import { Toaster } from "sonner";
 
 export const metadata = {
   title: "nextPathAI",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
             <Header/>
             <GlowingLines/>
             <main className="min-h-screen">{children}</main>
+            <Toaster richColors/>
             <footer className=" bg-muted/50 py-12">
               <div className=" container:mx-auto px-4 text-center text-gray-200">
                 <p>BY: Sekh Azhar Hossain</p>
