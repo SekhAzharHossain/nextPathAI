@@ -18,14 +18,14 @@ const Header = async () => {
   await checkUser();
   return (
     <header className=' fixed top-0 w-full border-b bg-transparent backdrop-blur-md z-50'>
-      <nav className=' container mx-auto px-4 h-16 flex items-center justify-between'>
+      <nav className=' container mx-auto px-4 h-16 flex items-center justify-between overflow-hidden'>
         <Link href="/">
           <Image
-            src="/logopathAI.png"
-            width={200}  
+            src="/NextPathAIlogo.png"
+            width={400}  
             height={200}
             alt='nextPathAI'
-            className=' h-24 py-1 w-auto object-contain'
+            className=' h-42 py-1 w-auto object-contain bg-transparent backdrop-blur-none'
           />
         </Link>
 
