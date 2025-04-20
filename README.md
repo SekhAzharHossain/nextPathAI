@@ -1,33 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 NextPathAI
 
-## Getting Started
+**NextPathAI** is a modern, AI-powered resume builder designed to help professionals craft polished resumes effortlessly. With real-time preview, markdown editing, and PDF export support, NextPathAI provides a seamless and intuitive experience for creating standout resumes.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 📝 **Interactive Resume Builder** — Create and edit resumes with form inputs or directly in markdown.
+- 🎯 **Live Markdown Preview** — Instantly preview your resume in a clean, styled layout.
+- 📄 **PDF Export** — Download your resume in professional PDF format with one click.
+- 💾 **Save to Cloud** — Securely save your resume for future editing and sharing.
+- 🎨 **Dark Theme Friendly** — Designed for a sleek experience in dark mode.
+- 🔐 **Authentication with Clerk** — Keep your data safe and accessible only to you.
+
+---
+
+## 🛠 Tech Stack
+
+| Technology        | Description                           |
+|-------------------|---------------------------------------|
+| **Next.js**       | React framework for SSR and routing   |
+| **Tailwind CSS**  | Utility-first CSS framework           |
+| **shadcn/ui**     | Beautifully styled UI components      |
+| **html2pdf.js**   | Client-side PDF generation            |
+| **@clerk/nextjs** | Authentication and user management    |
+| **Zod**           | Schema validation for form inputs     |
+| **React Hook Form** | Easy and performant form handling  |
+
+---
+
+
+## 📦 Installation
 
 ```bash
+# Clone the repo
+git clone https://github.com/SekhAzharHossain/nextpathai.git
+
+# Navigate to the project directory
+cd nextpathai
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
